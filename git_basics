@@ -1,0 +1,39 @@
+git init: Initialize a git repository, creates the .git file on your solution directory
+
+git add: includes the changed files you want to be part of your commit you can use these 3
+
+Include only one file: git add README.md
+
+Include all the modified files except the ones on .gitignore: git add *
+
+Include all modified files inclusive the ones on .gitignore: git add –A
+
+git commit: saves the selected changes add the option - m to include a message
+
+git push: saves the committed changes to remote github
+
+git pull: retrieves the latest changes from remote github
+
+git checkout: lets you navigate between branches or create a new one based on the options
+
+git checkout –b <branch_name> : creates a new branch
+
+git checkout <existing_branch_name> : navigate to an already existing branch
+
+git branch: list you the local or remote branches same as delete, rename, copy etc, for further info git branch –h
+
+git remote: responsible of syncing changes, let see specific examples that you may use for this one
+
+git remote –v : displays the remote-tracking you have setup for your repository
+
+git remote add upstream <ssh-git-url> : add the remote upstream to your repo setup, useful when working with forks
+
+git remote set-url : in case you add your remote origin or upstream using the https and want it to change it to SSH
+
+git merge: merge the changes from one branch into another
+
+git merge - -no-ff: this option is just to keep track of the merge on the history (you can skip this if you want)
+
+git merge upstream/<branch> : when merging from an upstream repo to your fork
+
+git fetch: probably before doing a merge you may want to do a fetch, it downloads latest content from a git remote repository
