@@ -1,0 +1,17 @@
+Debugging Features
+Git can be used as a tool to help you locate bugs and identify the source of changes in a file's history.
+
+Blame: Find the author and commit message of a segment of code
+Similar to svn, git has a blame feature that will show you who last modified each line of a file, and a part of their commit message:
+
+git blame <filename>
+Bisect: Binary search to find the commit where bugs were introduced
+So you have code that used to work, but doesn't anymore. How to go about finding what change broke it?
+Git comes with a command called bisect which is designed to leverage git's knowledge about the revision history and a quick binary search algorithm to assist you in tracking down bad changes. Bisect allows you to tell git that the current revision is bad, and to specify the last known good revision. Git will start drilling down through your history using a binary search algorithm, allowing you to mark commits as good or bad (which you determine by testing the working tree.) Using this method you can quickly drill down and find the offending commit, which will hopefully help you find an easy way to fix the bug.
+
+See Pro Git for a more thorough overview of git's debugging features, including bisect.
+
+Ignore changes
+Configure your local repo to ignore changes made to a specific file, while still keeping the file under version control (not possible with .gitignore file.) Be careful, as git will zealously overwrite this file if it has changed upstream, discarding local modifications.
+
+git update-index --assume-unchanged path/to/file
