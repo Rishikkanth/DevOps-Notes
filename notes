@@ -1,4 +1,4 @@
-DevSecOps pipeline
+ DevSecOps pipeline
 CI part
 when a developer triggers the pull request or push code to repository.(Github workflows get trigger/ jenkins builds get trigers)
 there are multiple jobs/ in Jenkins we have stages such as 
@@ -36,4 +36,6 @@ if application is built on java we use a application called maven/ gradle/ant to
 so once if we run the vite build it saves everything in dist folder.
 the build artifact is stored in dist directory. this will be provided by developer.
 
-
+Github actions Yaml file
+1) Name: CI/ CD or DevSecOps Pipeline 
+2) On
