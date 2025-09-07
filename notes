@@ -6,6 +6,10 @@ pre requestesites:
 Node.Js v14 or higher & npm or yarn
 
 to manage package dependencies related to the application we use npm.
+npm download the dependencies from package.json
+
+where as cmng to PIP uses requierments.txt file
+
 npm --version
 npm install
 what happens when npm is installed?
