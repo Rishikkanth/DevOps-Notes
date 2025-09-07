@@ -61,4 +61,4 @@ with:
  exit code:'1'
  ignore-unfixed: true
  vuln-type: 'os,library'
- secerity: critical
+ secerity: 'critical,High'
