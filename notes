@@ -6,7 +6,7 @@ pre requestesites:
 Node.Js v14 or higher & npm or yarn
 
 to manage package dependencies related to the application we use npm.
-npm download the dependencies from package.json
+npm download the dependencies from package.json # run npm ci
 where as cmng to PIP uses requierments.txt file
 
 so when ever we execute #npm run build npm comes to package.json file and checks for the keyword in package.json file and what ever the cmnd we provide in keyword it get executed.
