@@ -62,3 +62,5 @@ with:
  ignore-unfixed: true
  vuln-type: 'os,library'
  secerity: 'critical,High'
+
+note: For running Kubernetes cluster we need minimum of t2.medium.
