@@ -6,7 +6,7 @@ there are multiple jobs/ in Jenkins we have stages such as
 2) Static code analysis ( Deprivated packages, undeclared variables are caught in static code analysis,function not invoked anywhere)
 3)Once both the workflows/stages are completed then only the building of application stage get triggers.
 4) Docker stage has multiple steps( Building of Docker image/ Scanning of Docker image by Trivy/ pushing the docker image to github container registry)
-Note: Being as a Dev Secops engineer we cannot push the docker images to Docker registry or public registry we need to push it to Github Container registry ghcr.io/ Nexus / Jfrog)
+Note: Being as a Dev Secops engineer we cannot push the docker images to Docker registry (docker.io) or public registry we need to push it to Github Container registry ghcr.io/ Nexus / Jfrog)
 5)Once the image is created it is updated in Kubernetes manifest fileswhich are placed in the Kubernetes folder or Deployment .yaml file.
 note: Everytime when ever a new version of image is created it is updated in the particular section of deployment.
 6)Once the Yaml is updated it is pushed to repository using shell script. This concludes the CI part.
@@ -52,3 +52,13 @@ Github actions Yaml file
      build:
      steps included in the job
 --------------------------------------------
+ex: of Trivy in github actions
+name: Run trivy
+users:
+with:
+ image-ref:
+ format:'table'
+ exit code:'1'
+ ignore-unfixed: true
+ vuln-type: 'os,library'
+ secerity: critical
