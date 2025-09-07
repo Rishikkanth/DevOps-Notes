@@ -1,2 +1,17 @@
 .tsx - type script
 .jdk - java application
+
+
+pre requestesites: 
+Node.Js v14 or higher & npm or yarn
+
+to manage package dependencies related to the application we use npm.
+npm --version
+npm install
+what happens when npm is installed?
+
+if application is built on typescript we use a application called vite to run and build.
+if application is built on java we use a application called maven/ gradle/ant to run and build.
+
+
+
