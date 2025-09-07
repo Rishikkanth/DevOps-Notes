@@ -46,7 +46,7 @@ Github actions Yaml file
       branch:[]
 3) Jobs: 
      test:
-     steps included in the job
+     steps included in the job/ Github has most of the actions which perform the work.
      static code analysis:
      steps included in the job
      build:
